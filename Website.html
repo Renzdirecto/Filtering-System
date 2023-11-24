@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/f26332e6df.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Shopping-Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar"> 
+        <div class="sidehead">
+          <div class="dots">
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle" style="color: #333"></i>
+            <i class="fa-solid fa-circle"></i>
+          </div>
+          <hr style="margin: 15px 0; border: 1px solid #eee" />
+        </div>
+        <div class="sidebody" style="height: 69vh">
+          <!-- SearchBar start --> 
+          <div class="searchbar">
+            <input
+              type="text"
+              placeholder="Search for products"
+              id="searchBar"
+              name="searchBar"
+            />
+            <i class="fa-solid fa-magnifying-glass glass"></i>
+          </div>
+        <!-- SearchBar End -->
+          <!-- Sidebar Filter Start -->
+          <div class="sidebar-filter">
+            <!-- Price Start -->
+            <h5 class="section-title">
+              <span>Filter by price - - - - - - - - - - - - - - - -</span>
+            </h5>
+            <div class="filter-box">
+              <form>
+                <!--Filter by Price-->
+                <div>
+                  <input
+                    type="checkbox"
+                    class="price-CheckBox"
+                    checked
+                    id="price-all"
+                    value="0-100"
+                  />
+                  <label>All Price</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="price-CheckBox"
+                    id="price-1"
+                    value="0-20"
+                  />
+                  <label>₱0 - ₱20</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="price-CheckBox"
+                    id="price-2"
+                    value="20-40"
+                  />
+                  <label>₱20 - ₱40</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="price-CheckBox"
+                    id="price-3"
+                    value="40-60"
+                  />
+                  <label>₱40 - ₱60</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="price-CheckBox"
+                    id="price-4"
+                    value="60-80"
+                  />
+                  <label>₱60 - ₱80</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="price-CheckBox"
+                    id="price-5"
+                    value="80-100"
+                  />
+                  <label>₱80 - ₱100</label>
+                </div>
+              </form>
+            </div>
+            <!-- Price End -->
+
+            <!-- Brand Start -->
+            <h5 class="section-title">
+              <span>Filter by Brand - - - - - - - - - - - - - - -</span>
+            </h5>
+            <div class="filter-box">
+              <form>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="brand-CheckBox"
+                    checked
+                    id="brand-all"
+                    value="allBrands"
+                  />
+                  <label>All Brand</label>
+                  <!-- <span class="badge border font-weight-normal">1000</span> -->
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="brand-CheckBox"
+                    id="brand-1"
+                    value="Uniqlo"
+                  />
+                  <label>Uniqlo</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="brand-CheckBox"
+                    id="brand-2"
+                    value="Levi's"
+                  />
+                  <label>Levi's</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="brand-CheckBox"
+                    id="brand-3"
+                    value="Nike"
+                  />
+                  <label>Nike</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="brand-CheckBox"
+                    id="brand-4"
+                    value="Adidas"
+                  />
+                  <label>Adidas</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="brand-CheckBox"
+                    id="brand-5"
+                    value="Zara"
+                  />
+                  <label>Zara</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="brand-CheckBox"
+                    id="brand-6"
+                    value="H&M"
+                  />
+                  <label>H&M</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="brand-CheckBox"
+                    id="brand-7"
+                    value="Mango"
+                  />
+                  <label>Mango</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="brand-CheckBox"
+                    id="brand-8"
+                    value="Christian Louboutin"
+                  />
+                  <label>Christian Louboutin</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="brand-CheckBox"
+                    id="brand-9"
+                    value="The North Face"
+                  />
+                  <label>The North Face</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    class="brand-CheckBox"
+                    id="brand-10"
+                    value="Gucci"
+                  />
+                  <label>Gucci</label>
+                </div>
+              </form>
+            </div>
+            <!-- Brand End -->
+            <button onclick="clearFilters()">Clear All Filters</button>
+          </div>
+          <!-- SideBar Filter End-->
+         
+        </div>
+        <div class="sidefoot">
+          <hr style="margin: 15px 0; border: 1px solid #eee" />
+          <div class="social-icons">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-square-github"></i>
+          </div>
+        </div>
+      </div>
+      <div class="data">
+        <div class="top">
+          <p>Email Address here:</p>
+          <p>Full Name here:</p>
+        </div>
+        <div class="header">
+          <div class="dropdown" id="dropdown">
+            <div class="select">
+              <span class="selected" id="Categories">Categories</span>
+              <div class="caret"></div>
+            </div>
+            <ul class="menu">
+              <li><a href="#" data-id="All">All</a></li>
+              <li><a href="#" data-id="Clothing">Clothing</a></li>
+              <li><a href="#" data-id="Shoes">Shoes</a></li>
+              <li><a href="#" data-id="Accessories">Accessories</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="body">
+          <div id="root"></div>
+        </div>
+      </div>
+    </div>
+    <script src="App.js"></script>
+
+  </body>
+</html>
